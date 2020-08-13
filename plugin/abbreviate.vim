@@ -8,7 +8,7 @@ function! s:insert(pair) abort
 endfunction
 
 function! s:load() abort
-    call fzf#run(fzf#wrap({'source': 'cat dictionary.txt', 'sink': function('s:insert')}))
+    call fzf#run(fzf#wrap({'source': 'cat ~/.vim/plugged/abbr-cheatsheet/plugin/dictionary.txt', 'sink': function('s:insert')}))
 endfunction
 
 
